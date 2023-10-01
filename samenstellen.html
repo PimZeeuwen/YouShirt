@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <script src="/script.js"></script>
+  
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="orange" defer></script> 
+
+
+  <nav>
+    <a href="index.html" >
+        <img id="home" src="images/home.png" title="home" width="50">
+    </a>
+    <div id="title">
+      <h1>
+          YouShirt Samenstellen
+      </h1>
+    </div>
+    <a style="display:block" href="samenstellen.html">
+			<div id="samenstellen" class="button">
+				<b>Samenstellen</b>
+      </div>
+		</a>
+    <a style="display:block" href="contact.html">
+			<div id="contact" class="button">
+				<b>Contact</b>
+      </div>
+		</a>
+    <a href="account/account.html">
+        <img id="account" src="images/account.png" title="account" width="60">
+    </a>
+    <a href="winkelmand.html">
+        <img id="winkelmand" src="images/shoppingcart.webp" title="winkelmand" width="90">
+    </a>
+  </nav>
+
+  
+  <div class='samenstellen_wrapper' id='top_wrapper'>
+    <h2>Truien</h2>
+    <h4>Selecteer uw kleur</h4>
+    <div class='trui_div'>
+    <img class='trui' id='trui_wit' src='https://statb.jrmstatic.com/paul-shark-shark-basic-logo-sweater-trui-wit-9bqu02d7yg71x7is_653_698_a_n.jpg' onclick="input_clicked(0, trui_info)">
+  </div>
+  <div class='trui_div'>
+    <img class='trui' id='trui_zwart' src='https://www.ecotex.nl/contents/media/l_front-EP65-BL.jpg' onclick="input_clicked(1, trui_info)">
+  </div>
+  <div class='trui_div'>
+    <img class='trui' id='trui_rood' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiMrXt7720voxevI4_HgsitW5TzqA2TcRYADUYn0P6g5zH_EIgxOmhNTtdawU6YJpOvSs&amp;usqp=CAU' onclick="input_clicked(2, trui_info)">
+  </div>
+  <div class='trui_div'>
+    <img class='trui' id='trui_blauw' src="https://bmn.xcdn.nl/images/bomont-trui-blauw_202522-ko-2.jpg?f=rs:fit:200:200&amp;s=5f" onclick="input_clicked(3, trui_info)">
+  </div>
+  <div class='trui_div'>
+    <img class='trui' id='trui_groen' src='data:image/jpeg;base64,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' onclick="input_clicked(4, trui_info)">
+  </div>
+<br>
+<form class='file_form'>
+  <input type="file" id="myFile" name="filename">
+  <input type="submit" value='Add to cart'>
+</form>
+</div>
+  
+
+<div class='samenstellen_wrapper'>
+  <h2>Petten</h2>
+  <h4>Selecteer uw kleur</h4>
+<div class='pet_div'>
+  <img class='pet' id='pet_wit' src='https://www.stropdassenwinkel.nl/assets/SKUImages/_resampled/DropShadowImageWyIjMDAwIiwiMzAiLCI2IiwiNCIsIjgiXQ/PT-019-00.png' onclick="input_clicked(0, pet_info)">
+</div>
+<div class='pet_div'>
+  <img class='pet' id='pet_zwart' src='https://media.s-bol.com/mQV2ZRB5RwJE/550x414.jpg' onclick="input_clicked(1, pet_info)">
+</div>
+<div class='pet_div'>
+  <img class='pet' id='pet_rood' src='https://media.s-bol.com/8qK0wAWpkz4m/550x410.jpg' onclick="input_clicked(2, pet_info)">
+</div>
+<div class='pet_div'>
+  <img class='pet' id='pet_blauw' src='https://media.s-bol.com/ROO0DP8rQWWE/550x409.jpg' onclick="input_clicked(3, pet_info)">
+</div>
+<div class='pet_div'>
+  <img class='pet' id='pet_groen' src='https://www.emsporting.nl//Files/4/10000/10720/ProductPhotos/620/1444493152.jpg' onclick="input_clicked(4, pet_info)">
+</div>
+<br>
+<form class='file_form'>
+  <input type="file" id="myFile" name="filename">
+  <input type="submit" value='Add to cart'>
+</form>
+</div>
+  
+
+<div class='samenstellen_wrapper' id='bottom_wrapper'>
+  <h2>T-shirts</h2>
+  <h4>Selecteer uw kleur</h4>
+<div class='shirt_div'>
+  <img class='shirt' id='shirt_wit' src='https://www.zeeman.com/media/catalog/product/2/0/2020001484706_Front.jpg?quality=90&amp;fit=bounds&amp;height=700&amp;width=700&amp;canvas=700:700' onclick="input_clicked(0, shirt_info)">
+</div>
+<div class='shirt_div'>
+  <img class='shirt' id='shirt_zwart' src='https://www.zeeman.com/media/catalog/product/2/0/2020087789498_Front_01.jpg?quality=90&amp;fit=bounds&amp;height=700&amp;width=700&amp;canvas=700:700' onclick="input_clicked(1, shirt_info)">
+</div>
+<div class='shirt_div'>
+  <img class='shirt' id='shirt_rood' src='https://afosto-cdn-01.afosto.com/o4xtl/product/1463014626-IndushirtTO180t-shirtred_front.png' onclick="input_clicked(2, shirt_info)">
+</div>
+<div class='shirt_div'>
+  <img class='shirt' id='shirt_blauw' src='https://www.tipdebruin.nl/media/catalog/product/cache/09806c5b73ee1d228b074646087e01c9/u/o/uomo_t-shirt_my003_blauw_00047074_1.jpg' onclick="input_clicked(3, shirt_info)">
+</div>
+<div class='shirt_div'>
+  <img class='shirt' id='shirt_groen' src='https://www.ecotex.nl/contents/media/l_KellyGreen-front.jpg' onclick="input_clicked(4, shirt_info)">
+</div>
+<br>
+<form class='file_form'>
+  <input type="file" id="myFile" name="filename">
+  <input type="submit" value='Add to cart'>
+</form>
+</div>
+
+
+<script src="/samenstellen.js"></script>
+</body>
+
+</html>
