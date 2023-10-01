@@ -1,0 +1,61 @@
+:root{
+  --Blue: #5680E9;
+  --Blue1: #84CEEB;
+  --Blue2: #5AB9EA;
+  --grey: #C1C8E4;
+  --purple: #8860D0;
+}
+
+
+body{
+  background-image: linear-gradient(35deg, var(--Blue), var(--grey), var(--Blue1));
+  background-attachment: fixed;
+}
+
+a{
+  color: black;
+}
+
+input[name='voornaam'], input[name='achternaam'] {
+  width: 130px;
+  margin: 10px;
+}
+
+input[name='tussenvoegsel'] {
+  width: 40px;
+}
+
+input[name='emailadres'], input[name='wachtwoord'] {
+  width: 345px;
+  margin: 5px;
+}
+
+input[name='postcode'] {
+  width: 240px;
+  margin: 10px;
+}
+
+input[name='huisnummer'] {
+  width: 75px;
+  margin: 10px;
+}
+
+#buttons {
+  margin: auto;
+  height: 500px;
+  max-width: 600px;
+  min-width: min-content;
+}
+
+#inloggen {
+  width: 100px;
+  margin: 50px;
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+#form {
+  margin: 0 auto;
+  text-align: center;
+}
