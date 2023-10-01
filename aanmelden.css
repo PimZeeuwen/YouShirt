@@ -1,0 +1,15 @@
+:root{
+  --Blue: #5680E9;
+  --Blue1: #84CEEB;
+  --Blue2: #5AB9EA;
+  --grey: #C1C8E4;
+  --purple: #8860D0;
+}
+
+
+body{
+  background-image: linear-gradient(35deg, var(--Blue), var(--grey), var(--Blue1));
+  background-attachment: fixed;
+  text-align: center;
+}
+
