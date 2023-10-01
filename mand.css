@@ -1,0 +1,51 @@
+:root{
+  --Blue: #5680E9;
+  --Blue1: #84CEEB;
+  --Blue2: #5AB9EA;
+  --grey: #C1C8E4;
+  --purple: #8860D0;
+}
+
+#content{
+  width: 1000px;
+  margin: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-spacing: 0px;
+}
+
+table{
+  margin-bottom: 10px;
+}
+
+td{
+  padding: 3px;
+}
+
+#tebetalen{
+  border-width: 15px;
+  border-style: double;
+}
+
+#wrapper{
+  float: left;
+  margin: 20px;
+  width: 500px;
+  border: 2px solid var(--purple);
+  
+}
+
+.checkoutitem{
+  margin: 10px;
+  border: 1px solid var(--Blue);
+  padding: 10px;
+}
+
+#overzicht{
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid var(--purple);
+}
