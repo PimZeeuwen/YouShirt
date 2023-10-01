@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="mand.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="orange" defer></script>
+
+
+  <nav>
+    <a href="index.html">
+      <img id="home" src="images/home.png" title="home" width="50">
+    </a>
+    <div id="title">
+      <h1>
+        YouShirt Winkelmand
+      </h1>
+    </div>
+    <a style="display:block" href="samenstellen.html">
+      <div id="samenstellen" class="button">
+        <b>Samenstellen</b>
+      </div>
+    </a>
+    <a style="display:block" href="contact.html">
+      <div id="contact" class="button">
+        <b>Contact</b>
+      </div>
+    </a>
+    <a href="account/account.html">
+      <img id="account" src="images/account.png" title="account" width="60">
+    </a>
+    <a href="winkelmand.html">
+      <img id="winkelmand" src="images/shoppingcart.webp" title="winkelmand" width="90">
+    </a>
+  </nav>
+  <div id="content">
+    <div id="wrapper">
+      <div class="checkoutitem">
+        <b>Standaard product naam</b>
+        <br> Kleur <br>
+        <label for="aantal">Aantal:</label>
+        <select name="aantal" id="aantal">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="meer">meer</option>
+        </select>
+      </div>
+      <div class="checkoutitem">
+        <b>Eigen samenstelling</b>
+        <br> Kledingsoort
+        <br> Kleur
+        <br> Opdruk voorbeeld: <br>
+        <label for="aantal">Aantal:</label>
+        <select name="aantal" id="aantal">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="meer">meer</option>
+        </select>
+      </div>
+    </div>
+    <div id="overzicht">
+      <h3>Overzicht</h3>
+      <table>
+        <tr>
+          <th>Artikelen (aantal)</th>
+          <td>bedrag €</td>
+        </tr>
+        <tr>
+          <th>Verzendkosten</th>
+          <td>bedrag €</td>
+        </tr>
+        <tr id="tebetalen">
+          <th>Te betalen</th>
+          <td>bedrag €</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>Bezorggegevens</th>
+        </tr>
+        <tr>
+          <th>Straatnaam</th>
+          <td><input type="text" placeholder="Straatnaam"></td>
+        </tr>
+        <tr>
+          <th>Postcode</th>
+          <td><input type="text" placeholder="Postcode"></td>
+        </tr>
+        <tr>
+          <th>Huisnummer</th>
+          <td><input type="text" placeholder="Huisnummer"></td>
+        </tr>
+        <tr>
+          <th>E-mail</th>
+          <td><input type="text" placeholder="E-mail"></td>
+        </tr>
+      </table>
+      <input type="submit" value="Verder naar betalen" onclick='click_me_please()'>
+
+    </div>
+  </div>
+</body>
+
+</html>
